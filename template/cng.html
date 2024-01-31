@@ -1,0 +1,87 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+</head>
+{% include 'header/head.html' %}
+<body style="background-color: teal">
+    {%block content%}
+    <div class="center">
+    <p class="head"></p>
+
+
+
+    
+    
+    {%for i in var%}
+ <p class="text1001">{{i.name}}</p>
+ <img class="img1" src="{{i.image}}" alt="">
+ <p class="text1000">{{i.price}}</p>
+ <p class="text1000">{{i.feature1}}</p>
+ 
+ <p class="text1000">{{i.feature3}}</p>
+ <p class="text1000">{{i.feature4}}</p>
+ <p class="text1000">{{i.feature5}}</p>
+ <p class="text1000">{{i.feature6}}</p>
+ <p class="text1000">{{i.feature7}}</p>
+ <p class="text1000">{{i.feature8}}</p>
+ <p class="text1000">{{i.feature9}}</p>
+ {%endfor%}
+    
+    <!-- <p class="text1000">Tata Tiago</p>
+    <img class="img1" src="{% static 'img/tata tiago.webp'%}" alt="">
+    <p class="text1000">MG Astor</p>
+    <img class="img1" src="{% static 'img/MG astor cng.webp'%}" alt="">
+    <p class="text1000">Mahindra KUV100 NXT Trip</p>
+    <img class="img1" src="{% static 'img/mahindra KUV100.webp'%}" alt="">
+    <p class="text1000">Maruti Suzuki S-Presso</p>
+    <img class="img1" src="{% static 'img/maruti suzuki s-presso.webp'%}" alt="">
+    <p class="text1000">Hyundai Grand i10 Nios</p>
+    <img class="img1" src="{% static 'img/hyundai grand i10.webp'%}" alt=""> -->
+</div>
+    {%endblock%}
+    
+</body>
+<div class="footer10">
+    {% include 'footer/foot.html' %}
+</div>
+<style>
+    .footer10{
+       position: relative;
+       top: 1000px;
+    }
+    .text1001{
+        position: relative;
+        left: 170px;
+        top: 0px;
+        color: red;
+        font-size: xx-large;
+        z-index: 50;
+    }
+    .text1000{
+        position: relative;
+        left: 50px;
+        top: 0px;
+        font-size: larger;
+        font-weight: 600;
+        color: brown;
+        border: 1px solid firebrick;
+        border-block-end-width: 10px;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+        
+    }
+    .img1{
+        width: 600px;
+        position: relative;
+        top: 0px;
+    }
+    
+    </style>
+
+</html>

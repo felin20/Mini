@@ -1,0 +1,189 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/main.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+<header>
+
+</header>
+<body style="background-color: white;">
+    <!-- <div class="back">
+  <button class="zero">Home</button>
+    <div class="dropdown">
+        <button class="first">Car Variants</button></div>
+        <div class="dropdown-options">
+          <a href="#">Petrol</a>
+          <a href="#">Diesel</a>
+          <a href="#">Electric</a>
+          <a href="#">CNG</a>        
+        </div>
+      
+        <div class="dropdown1">
+          <button class="second">Brand</button></div>
+          <div class="dropdown-option">
+            <a href="#">Tata</a>
+            <a href="#">Volkswagen</a>
+            <a href="#">Mahindra</a>
+            <a href="#">Maruti Suzuki</a>
+            <a href="#">Hyundai</a>        
+          </div> -->
+          <div class="all">
+            <img class="imag1" src="{% static 'img/cardekho.svg'%}" alt="">
+            <button class="home"><a style="color: green;text-decoration: none;" href="{% url 'home'%}">Home</a></button>
+      <div class="dropdown1">
+        <button class="dropbutton1" style="background-color: white;"><a style="color: black;text-decoration: none;" href="">Car Variants</a></button>
+        <div class="content1">
+          <a style="text-decoration: none;color: black;" href="{% url 'petrol'%}">Petrol</a>
+          <a style="text-decoration: none;color: black;" href="{% url 'diesel'%}">Diesel</a>
+          <a style="text-decoration: none;color: black;" href="{% url 'electric'%}">Electric</a>
+          <a style="text-decoration: none;color: black;" href="{% url 'cng'%}">CNG</a>
+          
+        </div>
+      </div>          
+      <div class="dropdown2">
+        <button class="dropbutton2" style="background-color: white;"><a style="text-decoration: none;" href="">Brand</a></button>
+        <div class="content2">
+          <a style="text-decoration: none;" href="{% url 'tata'%}">Tata</a>
+          <a style="text-decoration: none;" href="{% url 'mg'%}">MG</a>
+          <a style="text-decoration: none;" href="{% url 'mahindra'%}">Mahindra</a>
+          <a style="text-decoration: none;" href="{% url 'maruti'%}">Maruti Suzuki</a>
+          <a style="text-decoration: none;" href="{% url 'hyundai'%}">Hyundai</a> 
+
+        </div>
+      </div>
+      <div class="search" style="position: relative;top: 10px;left:30px;height: 50px;padding: 5px;">
+        <form class="form1">
+        <input type="search" placeholder="Search Cars" name="" id="" style="width: 500px;height: 50px;background-color:white;">
+        <button type="submit" style="position: relative;left:0px;top:0px;height: 50px;"><i class="fa fa-search"> Search</i></button>
+        </form>
+      </div>
+      <!-- <select class="select1" name="language" id="">
+        <option value="English">English</option>
+      </select> -->
+<p class="login"><a style="text-decoration: none; color: red;" href="{% url 'login'%}">Login</a></p>
+<p class="register"><a style="text-decoration: none; color: red;" href="{% url 'register'%}">Sign Up</a></p>
+    </div>
+</body>
+<style>
+  
+  .imag1{
+    width: 200px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    filter: brightness(400%);
+  
+
+    z-index: 150;
+
+  }
+  .dropdown1{
+    position: relative;
+    left:200px ;
+  }
+  .dropbutton1,.dropbutton2{
+    position: relative;
+    left: 200px;
+  }
+  .dropdown1,.dropdown2{
+   display: inline-block;
+   position: relative;
+   top: 150px;
+  right: 150px;
+  z-index: 50;;}
+   
+.dropbutton1,.dropbutton2,.home{
+   padding: 10px;
+   background-color: white;
+   color: black;
+   border: none;
+   font-size: 20px;
+}
+.all{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   
+}
+.dropdown1,.dropdown2{
+   display: inline-block;
+   position: relative;
+   top: 100px;
+}
+.content1,.content2{
+   display: none;
+   position: absolute;
+   left: 200px;
+   background-color: black;
+   z-index: 50;
+   
+   
+   
+}
+
+.dropdown1:hover .content1{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   width: 140px;
+   background-color: white;
+   color: white;
+   z-index: 50;
+   gap: 15px;
+   
+}
+
+.dropdown2:hover .content2{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   width: 140px;
+   background-color: white;
+   color: white;
+   z-index: 50;
+   gap: 15px;}
+
+.home{
+  position: relative;
+  top: 100px;
+  height: 70px;
+  right: 150px;
+  z-index: 50;
+  height: 45px;
+  background-color: white;
+  color: black;
+}
+.search{
+  position: relative;
+  right: 200px;
+  z-index: 50;
+}
+.form1{
+  position: relative;
+  right: 250px;
+  z-index: 50;
+  
+}
+.select1{
+  position: relative;
+  right: 150px;
+  top: 20px;
+  z-index: 50;
+  height: 30px;
+}
+.login,.register{
+  position: relative;
+  top: 30px;
+  z-index: 50;
+  color: red;
+}
+</style>
+</html>

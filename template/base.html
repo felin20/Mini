@@ -1,0 +1,61 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+</head>
+<header>
+    {% include 'header/head.html' %}
+
+</header>
+<body>
+<div class="back">
+<img style="width: 1500px;" src="{% static 'img/3.jpg'%}" alt="Cars">
+
+{%block content%}
+{% include 'home.html' %}
+{%endblock%}
+
+</div>
+
+
+   
+</body>
+<footer>
+    <div class="footer1">
+        {% include 'footer/foot.html' %}
+        </div>
+</footer>
+<style>
+
+.footer1{
+    position: relative;
+    left: 00px;
+    top: -5300px;
+}    
+ img{
+    width: 2000px;
+    height: 1000px;
+    filter: brightness(100%);
+    position: relative;
+    top: 100px;}
+    footer{
+        position: relative;
+        top: 500px;
+    }
+.text1{
+    opacity: 50;
+    color: brown;
+    position: relative;
+    top: 500px;
+}
+.back{
+
+    
+}
+</style>
+</html>
+

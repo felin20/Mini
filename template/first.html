@@ -1,0 +1,8 @@
+ {%load static%}
+ {%for i in var%}
+ <p>{{i.name}}</p>
+ <p>{{i.brand}}</p>
+ <p>{{i.variant}}</p>
+ <p>{{i.info}}</p>
+ <img src="{{i.image}}" alt="">
+ {%endfor%}

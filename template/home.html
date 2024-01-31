@@ -1,0 +1,236 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%block content%}
+<div class="form10">
+    <!-- <form action="">
+        <p class="text13">Find Your Right Car</p>
+        <select name="" id="">
+            <option value="">New Cars</option>
+            <option value="">Used Cars</option>
+        </select>
+    </form> -->
+</div>
+<div class="most">
+
+<p class="w1">The Most Searched Cars</p>
+<div class="text10">
+<img class="img101" src="{% static 'img/mahindra thar.webp'%}" alt=""> </div>
+
+<p class="text11">Mahindra Thar</p>
+<p class="text12">Rs10.98 - 16.94 Lakh*</p>
+
+
+<img class="img101" src="{% static 'img/tata nexon1.webp'%}" alt="">
+
+    <p class="text11">Tata Nexon</p>
+    <p class="text12">Rs8.10 - 15.50 Lakh*</p>
+    
+  
+<img class="img101" src="{% static 'img/kia sonet.webp'%}" alt=""> 
+
+    <p class="text11">Kia Sonet</p>
+    <p class="text12">Rs7.79 - 14.89 Lakh*</p>
+
+    
+<img class="img101" src="{% static 'img/hyundai creta.webp'%}" alt="">
+
+    <p class="text11">Hyundai Creta</p>
+    <p class="text12">Rs10.87 - 19.20 Lakh*</p>
+    
+  
+<img class="img101" src="{% static 'img/tata punch.webp'%}" alt="">
+
+    <p class="text11">Tata Punch</p>
+    <p class="text12">Rs6 - 10.10 Lakh*</p>
+</div></div>
+<div class="latest">
+    <div class="l0">
+    <p class="w1">Latest Cars</p>
+    <div class="text10">
+    <img class="imag110" src="{% static 'img/l1.webp'%}" alt=""> 
+    
+    <p class="text11">Lamborghini Revuelto</p>
+    <p class="text12">Rs8.89 Cr*</p>
+    
+    
+    <img class="imag110" src="{% static 'img/l2.webp'%}" alt="">
+    
+        <p class="text11">Audi Q3</p>
+        <p class="text12">Rs42.77 - 51.94 Lakh*</p>
+        
+      
+    <img class="imag110" src="{% static 'img/l3.webp'%}" alt=""> 
+    
+        <p class="text11">BMW X7</p>
+        <p class="text12">Rs1.24 - 1.29 Cr*</p>
+    
+        
+    <img class="imag110" src="{% static 'img/l4.webp'%}" alt="">
+    
+        <p class="text11">Lexus RX</p>
+        <p class="text12">Rs95.80 Lakh - 1.20 Cr*</p>
+        
+      
+    <img class="imag110" src="{% static 'img/l5.webp'%}" alt="">
+    
+        <p class="text11">Mercedes-Benz A-Class Limousine</p>
+        <p class="text12">Rs42.80 - 48.30 Lakh*</p>
+    
+    </div>
+</div>
+
+    <p class="w2">Get trusted used cars nearby</p>
+        
+    <div class="z">
+        
+        <div class="text13">
+        <img class="img101" src="{% static 'img/place1.svg'%}" alt=""> 
+        <img class="img101" src="{% static 'img/place2.svg'%}" alt="">
+        <img class="img101" src="{% static 'img/place3.svg'%}" alt=""> 
+        <img class="img101" src="{% static 'img/place4.svg'%}" alt="">
+        <img class="img101" src="{% static 'img/place5.svg'%}" alt="">
+        
+        </div>
+        
+    <div class="y">
+        
+        <div class="text14">
+        <img class="img101" src="{% static 'img/place6.svg'%}" alt=""> 
+        <img class="img101" src="{% static 'img/place7.svg'%}" alt="">
+        <img class="img101" src="{% static 'img/place8.svg'%}" alt=""> 
+        <img class="img101" src="{% static 'img/place9.svg'%}" alt="">
+        <img class="img101" src="{% static 'img/place10.svg'%}" alt="">
+        
+        </div>
+
+    
+        <div class="text59">
+            <p>Ahmedabad</p>
+            <p>Bangalore</p>
+            <p>Chennai</p>
+            <p>Delhi NCR</p>
+            <p>Gurgaon</p>
+            
+        </div>
+        <div class="text60">
+            <p>Hyderabad</p>
+            <p>Jaipur</p>
+            <p>Kolkata</p>
+            <p>Mumbai</p>
+            <p>New Delhi</p>
+
+        </div>
+    
+    {%endblock%}
+</body>
+<style>
+    .text60{
+        position: relative;
+    top: -5135px;
+    left: 890px;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+
+
+    }
+    .most{
+        position: relative;
+        top: 400px;
+    }
+    .latest{
+        position: relative;
+        top: 380px;
+        left: 700px;
+    }
+.text59{
+    position: relative;
+    top: -4000px;
+    left: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+
+    }
+    .z{
+        position: relative;
+        right: 750px;
+    }
+    .w2{
+        position: relative;
+        top: -1650px;
+        left: -200px;
+        font-weight: 700;
+        font-size: xx-large;
+    }
+    .text13{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -1500px;
+        left: 480px;
+        gap: 75px;
+    }
+    .text14{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -2800px;
+        left: 750px;
+        gap: 75px;
+    }
+    .img101{
+        width: 288px;
+    height: 200px; 
+position: relative;
+left: 10px;
+top: -130px;   }
+    .w1{
+        position: relative;
+        top: -150px;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .imag110{
+        width: 288px;
+        height: 200px;
+        position: relative;
+        top: -150px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text11{
+        position: relative;
+        top: -150px;
+        z-index: 50;
+        font-weight: 900;
+    }
+    .text12{
+        position: relative;
+        top: -165px;
+        z-index: 50;
+        color: red;
+        font-weight: 400;
+
+    }
+.l0{
+    position: relative;
+    left: 450px;
+    top: -1485px;
+}
+form{
+    z-index: 50;
+}
+.text13{
+    z-index: 500;
+    color: red;
+}
+</style>
+</html>

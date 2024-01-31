@@ -1,0 +1,93 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+</head>
+{% include 'header/head.html' %}
+<body style="background-color: magenta;">
+     
+    <div class="center">
+    <p class="head"></p>
+
+    
+    {%for i in var%}
+ <p class="text1001">{{i.name}}</p>
+ <img class="img1" src="{{i.image}}" alt="">
+ <p class="text1000">{{i.price}}</p>
+ <p class="text1000">{{i.feature1}}</p>
+ 
+ <p class="text1000">{{i.feature3}}</p>
+ <p class="text1000">{{i.feature4}}</p>
+ <p class="text1000">{{i.feature5}}</p>
+ <p class="text1000">{{i.feature6}}</p>
+ <p class="text1000">{{i.feature7}}</p>
+ <p class="text1000">{{i.feature8}}</p>
+ <p class="text1000">{{i.feature9}}</p>
+ {%endfor%}
+
+
+ 
+
+
+    
+    <!-- <p class="text1000">Tata Altroz</p>
+    <img class="img1" src="{% static 'img/tata altroz.webp'%}" alt="">
+    
+    <p  class="text1000">MG Hector</p>
+    <img class="img1" src="{% static 'img/MG hector.webp'%}" alt="">
+    <p class="text1000">Mahindra XUV300</p>
+    <img class="img1" src="{% static 'img/mahindra XUV300.webp'%}" alt="">
+    <p class="text1000">Maruti Suzuki Swift LDI</p>
+    <img class="img1" src="{% static 'img/maruti suzuki swift LDI.webp'%}" alt="">
+    <p class="text1000">Hyundai Venue</p>
+    <img class="img1" src="{% static 'img/hyundai venue.webp'%}" alt=""> -->
+</div>
+    
+
+</body>
+<div class="footer10">
+    {% include 'footer/foot.html' %}
+</div>
+<style>
+    .footer10{
+       position: relative;
+       top: 1000px;
+    }
+    .text1001{
+        position: relative;
+        left: 170px;
+        top: 0px;
+        color: red;
+        font-size: xx-large;
+        z-index: 50;
+    }
+    .text1000{
+        position: relative;
+        left: 50px;
+        top: 0px;
+        font-size: larger;
+        font-weight: 600;
+        color: brown;
+        border: 1px solid firebrick;
+        border-block-end-width: 10px;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+        
+    }
+    .img1{
+        width: 600px;
+        position: relative;
+        top: 0px;
+    }
+    
+    .footer10{
+       position: relative;
+       top: 700px;
+    }
+    </style>
+</html>
